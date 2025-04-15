@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Antarctica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #222;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1#dynamic-text {
+      font-size: 32px;
+      color: navy;
+    }
+
+    .buttons {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077b6;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #023e8a;
+    }
+
+    #container p {
+      background-color: #e0f7fa;
+      padding: 15px;
+      border-left: 4px solid #0077b6;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      text-align: center;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="dynamic-text">Welcome to the Frozen Frontier: Antarctica</h1>
+    <p>Antarctica is the coldest, driest, and windiest continent on Earth — a place of extremes and scientific wonder.</p>
+  </header>
+
+  <div class="buttons">
+    <button onclick="changeText()">Discover More</button>
+    <button onclick="changeStyle()">Chill the Style</button>
+    <button onclick="toggleElement()">Toggle Antarctic Fact</button>
+  </div>
+
+  <div id="container"></div>
+
+  <section>
+    <h2>Why Antarctica Matters</h2>
+    <p>
+      Despite its harsh climate, Antarctica plays a crucial role in regulating Earth’s climate. It reflects solar radiation,
+      stores freshwater in its glaciers, and houses unique wildlife like penguins, seals, and krill.
+    </p>
+
+    <h2>Wildlife in the Ice</h2>
+    <p>
+      From the Emperor Penguin to the Weddell Seal, life has adapted to survive in the freezing temperatures.
+      These species are indicators of environmental changes and are vital to ocean ecosystems.
+    </p>
+
+    <h2>Scientific Research Hub</h2>
+    <p>
+      Antarctica is protected by international treaties for peaceful scientific exploration. Researchers study climate change,
+      space weather, glaciology, and more from the continent's dozens of stations.
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Explore Antarctica Project. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
